@@ -1,0 +1,56 @@
+{
+    "hostname": {
+        "hostname": "picofan"
+    },
+    "i2c": {
+        "num_channels": 1,
+        "max_i2c": 2,
+        "sda_0": 0,
+        "scl_0": 1
+    },
+    "sht4x": {
+        "num_sht4x": 1,
+        "max_sht4x": 2,
+        "mode_0": "high_precision",
+        "i2c_channel_0": 0,
+        "i2c_address_0": 68
+    },
+    "oled": {
+        "horizontal": 128,
+        "vertical": 32,
+        "i2c_channel": 0,
+        "i2c_address": 60,
+        "thermistor_number": 0,
+        "sht4x_number": 0
+    },
+    "thermistor": {
+        "num_thermistor": 1,
+        "max_thermistor": 4,
+        "pin_0": 28,
+        "adc_0": 2,
+        "temp_0": 25,
+        "beta_0": 3950,
+        "nominal_resistor_0": 10000,
+        "external_resistor_0": 10000
+    },
+    "fan": {
+        "num_fans": 1,
+        "max_fan": 4,
+        "pin_fan_0": 15,
+        "temp_type_0": "thermistor",
+        "temp_instance_0": 0,
+        "zero_rpm_0": true,
+        "min_temp_0": 25,
+        "max_temp_0": 75,
+        "fan_curve_0": "linear"
+    },
+    "influxdb": {
+        "token": "hCQboRZVd9d57tb-HRWwoTJuXE_ZqssqeCaRhe_Y_XOQ1I_BxmejCQ3mDArSeVIclhMrKYYkJGNDiV8Cu7HY8g=",
+        "org": "olympus",
+        "bucket": "picofan",
+        "location": "desk",
+        "url": "192.168.1.7",
+        "port": 8086,
+        "ssl": false
+    }
+}

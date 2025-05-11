@@ -1,0 +1,24 @@
+[tool.mypy]
+platform = "linux"
+mypy_path = ".venv/lib/python3.11/site-packages"
+custom_typeshed_dir = ".venv/lib/python3.11/site-packages" # allow mypy to use micropython-stdlib
+# files = "sht4x_micropy/*.py"
+follow_imports = "silent"
+exclude = [
+    ".venv/lib/python3.11/site-packages[\\/].*", # TOML basic string 
+    ".venv/lib/python3.11/site-packages/_mpy_shed/__init__.pyi",
+    "ssd1306.py"
+]
+follow_imports_for_stubs = true
+no_site_packages = true
+check_untyped_defs = true
+
+[tool.pylint]
+# W3101 disabled as micropython requests doesn't accept a timeout value
+# E0401 disabled as pylint doesn't work with the micropython stubs
+# E1101 similarly disabled due to pylint and micropython stubs
+disable = "W3101,E0401,E1101"
+ignore = ".venv,ssd1306.py"
+
+[tool.black]
+line-length = 100

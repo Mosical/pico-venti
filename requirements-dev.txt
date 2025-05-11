@@ -1,0 +1,5 @@
+micropython-rp2-rpi_pico_w-stubs
+mypy
+flake8
+pylint
+black

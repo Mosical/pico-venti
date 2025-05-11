@@ -1,0 +1,10 @@
+# Various VSCode and Python things
+__pycache__
+.mypy_cache
+.venv
+.vscode
+.micropico
+
+# Secrets that may be loaded to the microcontroller
+*.der
+ssid_credentials

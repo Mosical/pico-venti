@@ -1,0 +1,61 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #eee;
+        background: #121212;
+    }
+
+    a {
+        color: #809fff;
+    }
+}
+:root {
+    color-scheme: light dark; /* both supported */
+}
+label, input {
+    width:170px;
+    display:block;
+    float:left;
+    margin-bottom:10px;
+}
+label {
+    width:155px;
+    text-align:right;
+    padding-right:10px;
+    margin-top:2px;
+}
+.checkbox_label {
+    display:inline;
+    float:none;
+    margin-left:10px;
+    margin-bottom:10px;
+}
+.checkbox{
+    width: auto;
+}
+br {
+    clear:left;
+}
+h1 {
+    padding: 25px 25px 0px 25px;
+}
+form {
+    padding: 0px 25px 25px 25px;
+}
+#end {
+    padding: 0px 25px 25px 25px;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
