@@ -1,0 +1,11 @@
+# Pico Venti
+
+Raspberry Pi Pico W based Fan controller
+
+## Available Features
+
+* SHT4X temperature and humidity sensors
+* NTC Thermistor
+* PWM Fan control
+* Web based setting management
+* Publish readings to Grafana via InfluxDB

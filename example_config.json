@@ -45,7 +45,7 @@
         "fan_curve_0": "linear"
     },
     "influxdb": {
-        "token": "hCQboRZVd9d57tb-HRWwoTJuXE_ZqssqeCaRhe_Y_XOQ1I_BxmejCQ3mDArSeVIclhMrKYYkJGNDiV8Cu7HY8g=",
+        "token": "EXAMPLE_TOKEN",
         "org": "olympus",
         "bucket": "picofan",
         "location": "desk",
