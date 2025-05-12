@@ -76,7 +76,7 @@ class WifiSetup:
 
     def __init__(
         self,
-        ssid: str = "pico_fan",
+        ssid: str = "picoventi",
         password: str = "raspberry",
         sda_pin: int = 0,
         scl_pin: int = 1,

@@ -92,9 +92,10 @@ def get_file_upload_html() -> str:
     <h1>Upload file</h1>
     <form method="post" enctype="multipart/form-data">
         <div>
-            <label for="file" class=checkbox_label>Choose file to upload: </label>
+            <label for="file" class=upload_label>Choose file to upload: </label>
             <input type="file" class=upload id="file" name="file" multiple />
         </div>
+        <br>
         <div>
             <button>Submit</button>
         </div>

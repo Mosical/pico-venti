@@ -32,6 +32,15 @@ label {
 .checkbox{
     width: auto;
 }
+.buttons{
+    padding-left:25px;
+    display:block;
+    float:left;
+}
+.upload_label{
+    display:block;
+    width:180px;
+}
 br {
     clear:left;
 }

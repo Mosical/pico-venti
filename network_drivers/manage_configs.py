@@ -17,6 +17,10 @@ async def config_html(writer: asyncio.StreamWriter) -> None:
     html += """
         <body>
             <h1>PicoFan Config</h1>
+            <div class="buttons">
+                <button onclick="location.href='upload'">Upload Files</button>
+                <button onclick="location.href='delete'">Delete Files</button>
+            </div>
             <form id="config" action="" method="post">
     """
     writer.write(html)

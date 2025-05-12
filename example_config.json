@@ -1,6 +1,6 @@
 {
     "hostname": {
-        "hostname": "picofan"
+        "hostname": "picoventi"
     },
     "i2c": {
         "num_channels": 1,
@@ -46,10 +46,10 @@
     },
     "influxdb": {
         "token": "EXAMPLE_TOKEN",
-        "org": "olympus",
-        "bucket": "picofan",
-        "location": "desk",
-        "url": "192.168.1.7",
+        "org": "EXAMPLE_ORG",
+        "bucket": "EXAMPLE_BUCKET",
+        "location": "EXAMPLE_LOCATION",
+        "url": "URL_OR_IP",
         "port": 8086,
         "ssl": false
     }

@@ -53,11 +53,15 @@ class InfluxClient:
             str: InfluxDB api write URL
         """
         base_url = (
-            f'https://{self.config["influxdb"]["url"]}:{self.config["influxdb"]["port"]}'
+            f'https://{self.config["influxdb"]["url"]}'
             if self.config["influxdb"]["ssl"]
-            else f'http://{self.config["influxdb"]["url"]}:{self.config["influxdb"]["port"]}'
+            else f'http://{self.config["influxdb"]["url"]}'
         )
-        base_url += "/api/v2/write?"
+        base_url += (
+            f':{self.config["influxdb"]["port"]}/api/v2/write?'
+            if {self.config["influxdb"]["port"]} != ""
+            else "/api/v2/write?"
+        )
         uri = f'org={self.config["influxdb"]["org"]}&bucket={self.config["influxdb"]["bucket"]}'
         return f"{base_url}{uri}&precision=ns"
 

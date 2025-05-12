@@ -93,9 +93,9 @@ async def serve_static_content(received: str, writer: asyncio.StreamWriter) -> N
         received (str): content requested
         writer (asyncio.StreamWriter): async stream writing coroutine
     """
-    if "favicon.ico" in received:
-        writer.write("HTTP/2.0 200 OK\r\nContent-type: image/ico\r\n\r\n")
-        with open("static/favicon.ico", "rb") as favicon:
+    if "favicon" in received:
+        writer.write("HTTP/2.0 200 OK\r\nContent-type: image/svg+xml\r\n\r\n")
+        with open("static/favicon.svg", "rb") as favicon:
             writer.write(favicon.read())
             await writer.drain()
     elif "custom.css" in received:
